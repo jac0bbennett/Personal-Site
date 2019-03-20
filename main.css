@@ -105,6 +105,7 @@ button {
   border: 0;
   outline: 0;
   background: #f5984c;
+  background: linear-gradient(to bottom right, #f2a359 -40%, #b44141 220%);
   color: #fff;
   height: 40px;
   padding-left: 16px;
@@ -120,10 +121,12 @@ button {
   -webkit-font-smoothing: antialiased;
   cursor: pointer;
   box-shadow: 0px 5px 14px 1px rgba(0, 0, 0, 0.14);
+  transition: 300ms ease-in-out;
 }
 
 button:hover {
   background: #f7aa63;
+  background: linear-gradient(to bottom right, #f2a359 0%, #b44141 300%);
 }
 
 .icolab {
@@ -149,6 +152,13 @@ button.cta {
   font-size: 11pt;
 }
 
+.cta-link {
+  margin-top: 50px;
+  align-self: center;
+  margin-top: auto;
+  font-size: 11pt;
+}
+
 .port-header {
   float: right;
   margin-right: 150px;
@@ -167,7 +177,7 @@ button.cta {
 .port-items li {
   height: 250px;
   width: 250px;
-  box-shadow: 0px 5px 14px 1px rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 2px 34px -6px rgba(0, 0, 0, 0.68);
   margin: 40px;
   background: #b44141;
   background: linear-gradient(to bottom right, #b44141 50%, #3d3d3d 220%);
@@ -190,6 +200,7 @@ button.cta {
   margin-top: auto;
   width: 40%;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  background: linear-gradient(to bottom right, #f2a359 -40%, #b44141 220%);
 }
 
 .port-item-button i {
