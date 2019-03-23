@@ -1,51 +1,67 @@
+import SmoothScroll from "smooth-scroll";
+import AOS from "aos";
+
 var scroll = new SmoothScroll('a[href*="#"]', {
   speed: 800
 });
+
+AOS.init({ once: true, duration: 600, offset: 300 });
 
 const portItems = [
   {
     title: "Linknob",
     desc: `Social link sharing platform built with <b>Python</b>,
-<b>Flask</b>, <b>Postgresql</b>, and <b>jQuery</b>.`
+<b>Flask</b>, <b>Postgresql</b>, and <b>jQuery</b>.`,
+    url: "https://linknob.com"
   },
   {
     title: "Putt-Putt",
     desc: `Simple Score Tracking App built with <b>React</b>, <b>Node</b>, and
-  <b>Firebase</b>.`
+  <b>Firebase</b>.`,
+    url: "https://putt.jwb.cloud"
   },
   {
     title: "Jotter",
-    desc: `Chrome Extension for keeping notes built with <b>Javascript</b>.`
+    desc: `Chrome Extension for keeping notes built with <b>Javascript</b>.`,
+    url:
+      "https://chrome.google.com/webstore/detail/jotter/iamceofaeghmibfhlojfjdkjkikdpibf"
   },
   {
     title: "Data Uplift",
     desc: `App with multiple data functions and requires an access key to use
     built in <b>Python</b>, <b>Flask</b>, <b>Postgresql</b>, and
-    <b>Javascript</b>.`
+    <b>Javascript</b>.`,
+    url: "https://datauplift.com"
   },
   {
     title: "DumbCoin",
-    desc: `Simple cryptocurrency experiment built with <b>Python</b>.`
+    desc: `Simple cryptocurrency experiment built with <b>Python</b>.`,
+    url: "https://github.com/jac0bbennett/dumbcoin"
   },
   {
     title: "Jalexbennett.com",
-    desc: `Online business card / webpage for client.`
+    desc: `Online business card / webpage for client.`,
+    url: "https://jalexbennett.com"
   },
   {
     title: "Jwb.Cloud",
-    desc: `Basic landing page and logo for personal company.`
+    desc: `Basic landing page and logo for personal company.`,
+    url: "https://jwb.cloud"
   },
   {
     title: "Loanpeak.group",
-    desc: `Website and logo for client built with <b>React</b>.`
+    desc: `Website and logo for client built with <b>React</b>.`,
+    url: "https://loanpeak.group"
   },
   {
     title: "Partner Recruitment Calculator",
-    desc: `App to calculate partner recruitment built with <b>Vue.js</b>.`
+    desc: `App to calculate partner recruitment built with <b>Vue.js</b>.`,
+    url: "https://jacobbennett.us/calc"
   },
   {
     title: "SimpleScrape",
-    desc: `Easy to use web page scraper built with <b>Python</b>.`
+    desc: `Easy to use web page scraper built with <b>Python</b>.`,
+    url: "https://github.com/jac0bbennett/simplescrape"
   },
   {
     title: "Milk CMS",
@@ -56,12 +72,14 @@ const portItems = [
   {
     title: "Cyanide",
     desc: `Website status checker <b>Python</b>, <b>Flask</b>,
-    <b>Javascript</b>.`
+    <b>Javascript</b>.`,
+    url: "http://cyanide.herokuapp.com"
   },
   {
     title: "Global Chat Project",
-    desc: `Realtime chat app built with <b>Python</b>, <b>Flask</b>,
-    <b>Javascript</b>.`
+    desc: `Realtime chat app built with <b>Python</b>, <b>Flask</b>, <b>Web Sockets</b>, and
+    <b>Javascript</b>.`,
+    url: "http://jwb-gcp.herokuapp.com"
   }
 ];
 
@@ -81,11 +99,15 @@ for (var i = 0; i < portItems.length; i++) {
     portItems[i].desc +
     `
     </span>
+    <a href="` +
+    portItems[i].url +
+    `" class="port-item-link" target="_blank">
     <button class="port-item-button">
     <span class="icolab">Visit</span>
     <i class="material-icons">
     call_made
     </i>
     </button>
+    </a>
     </li>`;
 }

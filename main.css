@@ -84,6 +84,7 @@ body {
   margin: 0 auto;
   width: 80%;
   margin-top: 250px;
+  margin-bottom: 200px;
 }
 
 h2 {
@@ -196,15 +197,34 @@ button.cta {
   width: 80%;
 }
 
-.port-item-button {
+.port-item-link {
   margin-top: auto;
   width: 40%;
+}
+
+.port-item-button {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   background: linear-gradient(to bottom right, #f2a359 -40%, #b44141 220%);
 }
 
 .port-item-button i {
   font-size: 16px;
+}
+
+.skills {
+  height: 800px;
+  transform: skewY(-12deg);
+  background: #b44141;
+  background: linear-gradient(to right, #b44141 30%, #f2a359 220%);
+  overflow: hidden;
+}
+
+.skills-header {
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  transform: skewY(12deg);
+  padding-top: 50px;
 }
 
 @media all and (max-width: 750px) {
