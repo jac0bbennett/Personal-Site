@@ -212,19 +212,51 @@ button.cta {
 }
 
 .skills {
-  height: 800px;
+  height: auto;
   transform: skewY(-12deg);
   background: #b44141;
   background: linear-gradient(to right, #b44141 30%, #f2a359 220%);
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 150px;
 }
 
 .skills-header {
   color: #fff;
-  width: 100%;
-  text-align: center;
+  margin-top: 100px;
   transform: skewY(12deg);
-  padding-top: 50px;
+}
+
+.skills-wrapper {
+  color: #fff;
+  padding-top: 60px;
+  width: 80%;
+  margin: 0 auto;
+  transform: skewY(12deg);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.skill-group {
+  width: 300px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.skill-group b {
+  font-size: 24pt;
+  font-weight: 500;
+}
+
+.skills-wrapper ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0;
+  padding-top: 10px;
 }
 
 @media all and (max-width: 750px) {
