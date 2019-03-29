@@ -220,7 +220,7 @@ button.cta {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 150px;
+  padding-bottom: 100px;
 }
 
 .skills-header {
