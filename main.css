@@ -68,11 +68,32 @@ body {
   top: 0px;
 }
 
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  font-weight: 300;
+}
+
+.nav a {
+  margin-right: 40px;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px 10px 15px;
+  border-radius: 2px;
+  transition: 300ms ease;
+}
+
+.nav a:hover {
+  background: rgba(255, 255, 255, 0.205);
+}
+
 .header {
   color: #fff;
   margin: 0 auto;
   width: 50%;
-  margin-top: 70px;
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   height: 350px;
