@@ -111,3 +111,12 @@ for (var i = 0; i < portItems.length; i++) {
     </a>
     </li>`;
 }
+
+window.addEventListener("scroll", function(e) {
+  const nav = document.getElementById("nav");
+  if (window.scrollY >= 200) {
+    nav.classList.add("scrolled-nav");
+  } else {
+    nav.classList.remove("scrolled-nav");
+  }
+});
