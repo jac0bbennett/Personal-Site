@@ -129,16 +129,31 @@ contactform.addEventListener("submit", async function(e) {
 
   let params = {};
 
-  params["name"] = contactform.querySelector("[name='name']").value;
-  params["email"] = contactform.querySelector("[name='email']").value;
-  params["msg"] = contactform.querySelector("[name='msg']").value;
+  const nameInp = contactform.querySelector("[name='name']");
+  const emailInp = contactform.querySelector("[name='email']");
+  const msgInp = contactform.querySelector("[name='msg']");
+
+  const formMsg = document.getElementById("contact-msg");
+
+  params["name"] = nameInp.value;
+  params["email"] = emailInp.value;
+  params["msg"] = msgInp.value;
 
   try {
+    formMsg.innerHTML = "submitting...";
     const req = await axios.post("https://www.linknob.com/api/contact", params);
     if (req.data.error) {
       console.log(req.data.error);
+      formMsg.innerHTML = "An error occurred!";
+    } else {
+      formMsg.innerHTML = "Sent. Thank You!";
+
+      nameInp.value = "";
+      emailInp.value = "";
+      msgInp.value = "";
     }
   } catch (err) {
     console.log(err);
+    formMsg.innerHTML = "Could not submit form!";
   }
 });

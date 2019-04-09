@@ -345,6 +345,7 @@ button.cta {
   width: 50%;
   margin: 0 auto;
   margin-top: 200px;
+  margin-bottom: 200px;
 }
 
 textarea {
@@ -401,6 +402,12 @@ textarea:focus {
   transition: 200ms ease;
 }
 
+@media all and (max-width: 1250px) {
+  textarea {
+    width: 100%;
+  }
+}
+
 @media all and (max-width: 750px) {
   .header {
     width: 80%;
@@ -426,6 +433,10 @@ textarea:focus {
     width: 100%;
   }
 
+  .about {
+    width: 100%;
+  }
+
   .about-header {
     margin-right: 0px;
     text-align: center;
@@ -442,6 +453,7 @@ textarea:focus {
   .about-me p {
     margin: 0 auto;
     float: none;
+    width: 90%;
   }
 
   .contact {
@@ -458,6 +470,15 @@ textarea:focus {
 
   .nav .links {
     display: none;
+  }
+
+  .contact {
+    width: 90%;
+    padding-top: 500px;
+  }
+
+  .geninpdiv {
+    margin-right: 0;
   }
 
   .gentxtinp {
