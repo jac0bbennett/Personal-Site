@@ -1,5 +1,6 @@
 import SmoothScroll from "smooth-scroll";
 import AOS from "aos";
+import axios from "axios";
 
 var scroll = new SmoothScroll('a[href*="#"]', {
   speed: 800
@@ -118,5 +119,26 @@ window.addEventListener("scroll", function(e) {
     nav.classList.add("scrolled-nav");
   } else {
     nav.classList.remove("scrolled-nav");
+  }
+});
+
+const contactform = document.getElementById("contact-form");
+
+contactform.addEventListener("submit", async function(e) {
+  e.preventDefault();
+
+  let params = {};
+
+  params["name"] = contactform.querySelector("[name='name']").value;
+  params["email"] = contactform.querySelector("[name='email']").value;
+  params["msg"] = contactform.querySelector("[name='msg']").value;
+
+  try {
+    const req = await axios.post("https://www.linknob.com/api/contact", params);
+    if (req.data.error) {
+      console.log(req.data.error);
+    }
+  } catch (err) {
+    console.log(err);
   }
 });

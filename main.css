@@ -5,6 +5,9 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 0px;
   padding: 0px;
+}
+
+body {
   overflow-x: hidden;
 }
 
@@ -338,6 +341,66 @@ button.cta {
   padding-top: 20px;
 }
 
+.contact {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+
+textarea {
+  width: 700px;
+  height: 300px;
+  font-size: 14pt;
+  font-family: Roboto;
+  padding: 5px;
+}
+
+textarea:focus {
+  outline: 1px solid #b44141;
+}
+
+.geninpdiv {
+  position: relative;
+  height: 60px;
+  width: auto;
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.gentxtinp:focus ~ .floating-label,
+.gentxtinp:not(:focus):valid ~ .floating-label {
+  top: -10px;
+  left: 0px;
+  font-size: 12px;
+  opacity: 1;
+  color: #b44141;
+}
+
+.gentxtinp {
+  margin-top: 12px;
+  font-size: 14pt;
+  width: 300px;
+  height: 40px;
+  outline: none;
+  border: none;
+  border: 1px solid #000;
+  padding-left: 5px;
+  padding-right: 2px;
+  border-radius: 2px;
+}
+
+.gentxtinp:focus {
+  border: 1px solid #b44141;
+}
+
+.floating-label {
+  position: absolute;
+  pointer-events: none;
+  left: 10px;
+  top: 20px;
+  transition: 200ms ease;
+}
+
 @media all and (max-width: 750px) {
   .header {
     width: 80%;
@@ -381,6 +444,10 @@ button.cta {
     float: none;
   }
 
+  .contact {
+    margin-top: 400px;
+  }
+
   .nav {
     justify-content: center;
   }
@@ -391,5 +458,9 @@ button.cta {
 
   .nav .links {
     display: none;
+  }
+
+  .gentxtinp {
+    width: 100%;
   }
 }
