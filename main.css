@@ -412,6 +412,7 @@ textarea:focus {
   .header {
     width: 80%;
     height: 450px;
+    margin-top: 30px;
   }
 
   .tagline {
@@ -420,7 +421,7 @@ textarea:focus {
 
   .portfolio {
     width: 90%;
-    margin-top: 250px;
+    margin-top: 270px;
   }
 
   .port-items {
