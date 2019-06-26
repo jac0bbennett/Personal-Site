@@ -10,6 +10,13 @@ AOS.init({ once: true, duration: 600, offset: 300 });
 
 const portItems = [
   {
+    title: "Milk CMS",
+    desc: `Unfinished centralized headless content management system built
+    with <b>Python</b>, <b>Flask</b>, <b>React</b>, and
+    <b>Postgresql</b>.`,
+    url: "https://milk.jwb.cloud"
+  },
+  {
     title: "Linknob",
     desc: `Social link sharing platform built with <b>Python</b>,
 <b>Flask</b>, <b>Postgresql</b>, and <b>jQuery</b>.`,
@@ -45,11 +52,6 @@ const portItems = [
     url: "https://jalexbennett.com"
   },
   {
-    title: "Jwb.Cloud",
-    desc: `Basic landing page and logo for personal company.`,
-    url: "https://jwb.cloud"
-  },
-  {
     title: "Loanpeak.group",
     desc: `Website and logo for client built with <b>React</b>.`,
     url: "https://loanpeak.group"
@@ -63,13 +65,6 @@ const portItems = [
     title: "SimpleScrape",
     desc: `Easy to use web page scraper built with <b>Python</b>.`,
     url: "https://github.com/jac0bbennett/simplescrape"
-  },
-  {
-    title: "Milk CMS",
-    desc: `Unfinished centralized headless content management system built
-    with <b>Python</b>, <b>Flask</b>, <b>React</b>, and
-    <b>Postgresql</b>.`,
-    url: "https://milk.jwb.cloud"
   },
   {
     title: "Cyanide",
