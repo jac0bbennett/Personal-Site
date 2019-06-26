@@ -11,7 +11,7 @@ AOS.init({ once: true, duration: 600, offset: 300 });
 const portItems = [
   {
     title: "Milk CMS",
-    desc: `Unfinished centralized headless content management system built
+    desc: `Headless content management system built
     with <b>Python</b>, <b>Flask</b>, <b>React</b>, and
     <b>Postgresql</b>.`,
     url: "https://milk.jwb.cloud"
