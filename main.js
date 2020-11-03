@@ -14,7 +14,7 @@ const portItems = [
     desc: `Headless content management system built
     with <b>Python</b>, <b>Flask</b>, <b>React</b>, and
     <b>Postgresql</b>.`,
-    url: "https://milk.jwb.cloud"
+    url: "https://milkcms.com"
   },
   {
     title: "Linknob",
@@ -109,7 +109,7 @@ for (var i = 0; i < portItems.length; i++) {
     </li>`;
 }
 
-window.addEventListener("scroll", function(e) {
+window.addEventListener("scroll", function (e) {
   const nav = document.getElementById("nav");
   if (window.scrollY >= 200) {
     nav.classList.add("scrolled-nav");
@@ -120,7 +120,7 @@ window.addEventListener("scroll", function(e) {
 
 const contactform = document.getElementById("contact-form");
 
-contactform.addEventListener("submit", async function(e) {
+contactform.addEventListener("submit", async function (e) {
   e.preventDefault();
 
   let params = {};
