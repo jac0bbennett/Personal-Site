@@ -62,9 +62,9 @@ const portItems = [
     url: "https://jacobbennett.us/calc"
   },
   {
-    title: "SimpleScrape",
-    desc: `Easy to use web page scraper built with <b>Python</b>.`,
-    url: "https://github.com/jac0bbennett/simplescrape"
+    title: "Polls",
+    desc: `Basic polling app`,
+    url: "http://polls.jwb.cloud"
   },
   {
     title: "Cyanide",
