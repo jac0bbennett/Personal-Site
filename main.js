@@ -31,8 +31,7 @@ const portItems = [
   {
     title: "Jotter",
     desc: `Chrome Extension for keeping notes built with <b>Javascript</b>.`,
-    url:
-      "https://chrome.google.com/webstore/detail/jotter/iamceofaeghmibfhlojfjdkjkikdpibf"
+    url: "https://chrome.google.com/webstore/detail/jotter/iamceofaeghmibfhlojfjdkjkikdpibf"
   },
   {
     title: "Data Uplift",
@@ -74,9 +73,9 @@ const portItems = [
   },
   {
     title: "Global Chat Project",
-    desc: `Realtime chat app built with <b>Python</b>, <b>Flask</b>, <b>Web Sockets</b>, and
-    <b>Javascript</b>.`,
-    url: "http://jwb-gcp.herokuapp.com"
+    desc: `Realtime chat app built with <b>Node</b>, <b>Express</b>, <b>Web Sockets</b>, and
+    <b>React</b>.`,
+    url: "http://gcp.jwb.cloud"
   }
 ];
 
