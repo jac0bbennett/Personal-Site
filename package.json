@@ -1,28 +1,28 @@
 {
-  "name": "jacobbennett-us",
-  "version": "1.0.0",
-  "description": "Personal Site",
-  "main": "main.js",
-  "dependencies": {
-    "aos": "^2.3.4",
-    "axios": "^0.18.1",
-    "smooth-scroll": "^16.0.2"
-  },
-  "devDependencies": {
-    "webpack": "^5.58.1",
-    "webpack-cli": "^4.9.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jac0bbennett/Personal-Site.git"
-  },
-  "author": "Jacob Bennett",
-  "bugs": {
-    "url": "https://github.com/jac0bbennett/Personal-Site/issues"
-  },
-  "homepage": "https://github.com/jac0bbennett/Personal-Site#readme"
+	"name": "jacobbennett-us",
+	"version": "1.0.0",
+	"description": "Personal Site",
+	"main": "main.js",
+	"dependencies": {
+		"aos": "^2.3.4",
+		"axios": "^0.18.1",
+		"smooth-scroll": "^16.0.2"
+	},
+	"devDependencies": {
+		"webpack": "^5.76.3",
+		"webpack-cli": "^5.0.1"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "webpack --mode production"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/jac0bbennett/Personal-Site.git"
+	},
+	"author": "Jacob Bennett",
+	"bugs": {
+		"url": "https://github.com/jac0bbennett/Personal-Site/issues"
+	},
+	"homepage": "https://github.com/jac0bbennett/Personal-Site#readme"
 }
